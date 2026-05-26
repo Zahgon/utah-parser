@@ -1,7 +1,6 @@
 package com.sonalake.utah.config;
 
 import com.fasterxml.jackson.dataformat.xml.annotation.JacksonXmlText;
-
 import java.util.List;
 import java.util.regex.Pattern;
 
@@ -23,7 +22,7 @@ public class HeaderDelimiter {
     private Pattern compiledPattern;
 
     public boolean matches(String candidate) {
-        return compiledPattern.matcher(candidate).matches();
+        throw new UnsupportedOperationException("STUB: not implemented");
     }
 
     /**
@@ -32,8 +31,6 @@ public class HeaderDelimiter {
      * @param searches the searches, processed in this order
      */
     void compile(List<NameValue> searches) {
-        String valueText = SearchHelper.translate(delimiter, searches);
-        compiledPattern = Pattern.compile(".*?" + valueText + ".*?");
+        throw new UnsupportedOperationException("STUB: not implemented");
     }
-
 }

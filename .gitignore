@@ -5,3 +5,8 @@ target
 .java-version
 /build/
 /.gradle/
+
+.aider*
+logs/
+.commit0_scripts/
+.github/workflows/
